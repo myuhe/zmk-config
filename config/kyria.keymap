@@ -20,7 +20,6 @@
 
     mmc: morph_c {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_c";
         #binding-cells = <0>;
         bindings = <&kp C>, <&kp I>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -29,7 +28,6 @@
 
     mmg: morph_g {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_g";
         #binding-cells = <0>;
         bindings = <&kp G>, <&kp U>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -38,7 +36,6 @@
 
     mmp: morph_p {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_p";
         #binding-cells = <0>;
         bindings = <&kp P>, <&kp R>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -47,7 +44,6 @@
 
     mmy: morph_y {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_y";
         #binding-cells = <0>;
         bindings = <&kp Y>, <&kp T>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -56,7 +52,6 @@
 
     mmj: morph_j {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_j";
         #binding-cells = <0>;
         bindings = <&kp J>, <&kp C>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -65,7 +60,6 @@
 
     mmb: morph_b {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_b";
         #binding-cells = <0>;
         bindings = <&kp B>, <&kp N>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -74,7 +68,6 @@
 
     mmr: morph_r {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_r";
         #binding-cells = <0>;
         bindings = <&kp R>, <&kp O>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -83,7 +76,6 @@
 
     mmh: morph_h {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_h";
         #binding-cells = <0>;
         bindings = <&kp H>, <&kp J>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -92,7 +84,6 @@
 
     mme: morph_e {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_e";
         #binding-cells = <0>;
         bindings = <&kp E>, <&kp D>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -101,7 +92,6 @@
 
     mmcom: morph_com {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_com";
         #binding-cells = <0>;
         bindings = <&kp COMMA>, <&kp W>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -110,7 +100,6 @@
 
     mmq: morph_q {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_q";
         #binding-cells = <0>;
         bindings = <&kp Q>, <&kp X>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -119,7 +108,6 @@
 
     mmo: morph_o {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_o";
         #binding-cells = <0>;
         bindings = <&kp O>, <&kp S>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -129,7 +117,6 @@
 
     mms: morph_s {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_s";
         #binding-cells = <0>;
         bindings = <&kp S>, <&kp SEMI>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -138,7 +125,6 @@
 
     mmf: morph_f {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_f";
         #binding-cells = <0>;
         bindings = <&kp F>, <&kp Y>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -147,7 +133,6 @@
 
     mmdot: morph_dot {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_dot";
         #binding-cells = <0>;
         bindings = <&kp DOT>, <&kp E>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -156,7 +141,6 @@
 
     mmt: morph_t {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_t";
         #binding-cells = <0>;
         bindings = <&kp T>, <&kp K>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -165,7 +149,6 @@
 
     mmi: morph_i {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_i";
         #binding-cells = <0>;
         bindings = <&kp I>, <&kp G>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -174,7 +157,6 @@
 
     mmk: morph_k {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_k";
         #binding-cells = <0>;
         bindings = <&kp K>, <&kp V>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -183,7 +165,6 @@
 
     mmx: morph_x {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_x";
         #binding-cells = <0>;
         bindings = <&kp X>, <&kp B>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -192,7 +173,6 @@
 
     mmd: morph_d {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_d";
         #binding-cells = <0>;
         bindings = <&kp D>, <&kp H>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -201,7 +181,6 @@
 
     mml: morph_l {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_l";
         #binding-cells = <0>;
         bindings = <&kp L>, <&kp P>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -210,7 +189,6 @@
 
     mmz: morph_z {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_z";
         #binding-cells = <0>;
         bindings = <&kp Z>, <&kp FSLH>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -219,7 +197,6 @@
 
     mmu: morph_u {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_u";
         #binding-cells = <0>;
         bindings = <&kp U>, <&kp F>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -228,7 +205,6 @@
 
     mmn: morph_n {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_n";
         #binding-cells = <0>;
         bindings = <&kp N>, <&kp L>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -237,7 +213,6 @@
 
     mmw: morph_w {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_w";
         #binding-cells = <0>;
         bindings = <&kp W>, <&kp COMMA>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -246,7 +221,6 @@
 
     mmv: morph_v {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_v";
         #binding-cells = <0>;
         bindings = <&kp V>, <&kp DOT>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
@@ -255,7 +229,6 @@
 
     mmsqt: morph_sqt {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_sqt";
         #binding-cells = <0>;
         bindings = <&kp SQT>, <&kp Q>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
