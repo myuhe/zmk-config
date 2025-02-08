@@ -246,11 +246,11 @@ behaviors {
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
 
- mmv: morph_vvv {
+ mmv: morph_v {
         compatible = "zmk,behavior-mod-morph";
-        label = "morph_vvv";
+        label = "morph_v";
         #binding-cells = <0>;
-        bindings = <&kp V>, <&kp DOT>;
+        bindings = <&kp A>, <&kp DOT>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
