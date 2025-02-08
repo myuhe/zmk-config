@@ -246,7 +246,7 @@ behaviors {
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
 
- mma: morph_v {
+ MMV: morph_v {
         compatible = "zmk,behavior-mod-morph";
         label = "morph_v";
         #binding-cells = <0>;
