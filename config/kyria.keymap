@@ -12,7 +12,7 @@
 #define QWERTY  1
 #define RAISE   2
 #define LOWER   3
-#define NUM   4
+#define NUM     4
 #define FUNC    5
 
 
@@ -237,7 +237,7 @@ behaviors {
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
 
- mmw: morph_w {
+    mmw: morph_w {
         compatible = "zmk,behavior-mod-morph";
         label = "morph_w";
         #binding-cells = <0>;
@@ -246,7 +246,7 @@ behaviors {
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
 
- mm_v: morph_v {
+    mm_v: morph_v {
         compatible = "zmk,behavior-mod-morph";
         label = "morph_v";
         #binding-cells = <0>;
@@ -263,7 +263,6 @@ behaviors {
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
-
 
       };
 
