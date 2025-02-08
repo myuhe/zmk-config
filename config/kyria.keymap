@@ -65,6 +65,20 @@ behaviors {
       sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
     };
 
+    raise {
+      // ---------------------------------------------------------------------------------------------------------------------------------
+      // |     |  \  |  ^  |  !   |  &   |  |   |                                          |  @   |  =    |  +    |  *   |   %   |   -  |
+      // | (   |  #  |  $  |  "   |  '   |  ~   |                                          |  ←   |  ↓  |  ↑   |  →   |  `  |   )  |
+      // |     |     |     |      | {    |  [   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  ]   |  }    |  ,    |  .   |   /   | CTRL |
+      //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+      bindings = <
+        &kp ESC   &kp BSLH &kp CARET &kp EXCL &kp AMPS &kp PIPE                             &kp AT &kp EQUAL &kp PLUS &kp ASTRK &kp PRCNT &kp MINUS
+        &kp LPAR   &kp HASH    &kp DLLR     &kp DQT    &kp SQT    &kp TILDE          &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT    &kp GRAVE  &kp RPAR
+        &kp LSHFT &kp Z &kp X &kp C &kp LBRC &kp LBKT &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp RBKT &kp RBRC  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+        &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+        >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+    };
 
 
 
