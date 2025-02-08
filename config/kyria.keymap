@@ -250,7 +250,7 @@ behaviors {
         compatible = "zmk,behavior-mod-morph";
         label = "morph_v";
         #binding-cells = <0>;
-        bindings = <&kp V>, <&kp DOT>;
+        bindings = <&kp V>, <&kp COMMA>;
         mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
