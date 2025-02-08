@@ -279,8 +279,8 @@ behaviors {
       //                     | L-ALT  | L-ALT  | DEL  |  S_SPACE  |   LGUI   |  |   RGUI   |  S_RET  |  BSPC | R-ALT  | R-ALT |
             bindings = <
         &kp TAB        &mmsqt  &mmcom &mmdot &mmp &mmy 							                        &mmf            &mmg          &mmc    &mmr &mml &kp FSLH
-    &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &mo 1    &kp LSHFT  &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+		&mt LCTRL ESC  &kp A	&mmo  &mme	  &mmu	&mmi									                           &mmd            &mmh          &mmt    &mmn &mms &kp MINUS
+         &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &mo 1    &kp LSHFT  &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                      &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
             >;
 
