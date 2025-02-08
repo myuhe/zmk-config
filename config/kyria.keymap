@@ -80,6 +80,20 @@ behaviors {
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
 
+    lower {
+      // ---------------------------------------------------------------------------------------------------------------------------------
+      // |  ESC  |  Q  |  F7  |  F8   |  F9   |  F12   |                                          |   =   |  7    |  8    |  9   |   (   |    )  |
+      // |  TAB  |  A  |  F4  |  F5   |  F6   |  F11   |                                          |  BSPC   |  4    |  5    |  6   |   +   |   -  |
+      // | SHIFT |  Z  |  F1  |  F2   |  F3   |  F10   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  .   |  1    |  2    |  3   |   /   | * |
+      //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | 0  | 00|
+      bindings = <
+        &kp ESC   &kp Q &kp F7 &kp F8 &kp F9 &kp F12                                                 &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp LPAR    &kp RPAR
+        &kp LCTRL &kp A &kp F4 &kp F5 &kp F6 &kp F11                                                 &kp BSPC  &kp N4  &kp N5  &kp N6  &kp PLUS    &kp MINUS
+        &kp LSHFT &kp Z &kp F1 &kp F2 &kp F3 &kp F10  &bt BT_SEL 0 &bt BT_CLR &kp LSHFT &kp LSHFT    &kp DOT    &kp N1  &kp N2  &kp N3  &kp FSLH    &kp ASTRK
+        &kp LGUI &kp DEL &kp RET &kp ESC  &rgb_ug RGB_TOG                          &kp RET  &kp RET  &kp N0     &kp COMMA &kp BSPC
+        >;
+      sensor-bindings = <&inc_dec_kp UP DOWN>;
+    };
 
 
 
