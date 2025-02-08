@@ -315,7 +315,7 @@ behaviors {
         &kp LSHFT &kp Z &kp X &kp C &kp LBRC &kp LBKT &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp RBKT &kp RBRC  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
         &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
         >;
-      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     lower {
