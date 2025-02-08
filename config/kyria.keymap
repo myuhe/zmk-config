@@ -5,269 +5,43 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
-#define DEFAULT 0
-#define QWERTY  1
+#include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-
-    mmc: morph_c {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp C>, <&kp I>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmg: morph_g {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp G>, <&kp U>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmp: morph_p {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp P>, <&kp R>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmy: morph_y {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp Y>, <&kp T>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmj: morph_j {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp J>, <&kp C>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmb: morph_b {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp B>, <&kp N>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmr: morph_r {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp R>, <&kp O>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmh: morph_h {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp H>, <&kp J>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mme: morph_e {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp E>, <&kp D>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmcom: morph_com {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp COMMA>, <&kp W>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmq: morph_q {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp Q>, <&kp X>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmo: morph_o {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp O>, <&kp S>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-
-    mms: morph_s {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp S>, <&kp SEMI>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmf: morph_f {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp F>, <&kp Y>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmdot: morph_dot {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DOT>, <&kp E>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmt: morph_t {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp T>, <&kp K>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmi: morph_i {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp I>, <&kp G>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmk: morph_k {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp K>, <&kp V>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmx: morph_x {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp X>, <&kp B>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmd: morph_d {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp D>, <&kp H>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mml: morph_l {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp L>, <&kp P>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmz: morph_z {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp Z>, <&kp FSLH>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmu: morph_u {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp U>, <&kp F>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmn: morph_n {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp N>, <&kp L>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmw: morph_w {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp W>, <&kp COMMA>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmv: morph_v {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp V>, <&kp DOT>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-    mmsqt: morph_sqt {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp SQT>, <&kp Q>;
-        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
-      };
-
-
-    };
-
-
     keymap {
-      compatible = "zmk,keymap";
+        compatible = "zmk,keymap";
 
-    default_layer {
-      // ---------------------------------------------------------------------------------------------------------------------------------
-      // |  TAB  |  '  |  ,  |  .   |  P   |  Y   |                                          |  F   |  G    |  C    |  R   |   L   |   /  |
-      // |  C_ESC |  A  |  O  |  E   |  U   |  I   |                                          |  D   |  H    |  T    |  N   |   S   |   -  |
-      // |   `   |  ;  |  Q  |  J   |  K   |  X   | L_SHIFT  | D_CTRL |  | U_CTRL | R_SHIFT |  B   |  M    |  W    |  V   |   Z   |   \ |
-      //                     | L-ALT  | L-ALT  | DEL  |  S_SPACE  |   LGUI   |  |   RGUI   |  S_RET  |  BSPC | R-ALT  | R-ALT |
-      bindings = <
-        &kp TAB        &mmsqt  &mmcom &mmdot &mmp &mmy 								                               &mmf            &mmg          &mmc    &mmr &mml &kp FSLH
-		&mt LCTRL ESC  &kp A	&mmo  &mme	  &mmu	&mmi									                           &mmd            &mmh          &mmt    &mmn &mms &kp MINUS
-		&kp GRAVE	   &lt NUM SEMI &mmq   &mmj	  &mmk	&mmx   &mt LALT LEFT  &lt FUNC RIGHT   &lt FUNC DOWN  &mt RALT UP  &mmb            &kp M          &mmw    &mmv &mmz &kp BSLH
-                    &kp RET  &mt LALT PG_UP &lt LOWER DEL  &mt LSHFT SPACE &kp LGUI        &kp RGUI       &mt RSHIFT RET &lt RAISE BSPC  &mt LALT PG_DN &kp RET
-        >;
+        default_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | LAYER 1 | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+            bindings = <
+    &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+    &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &mo 1    &kp LSHFT  &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+                     &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+            >;
 
-      sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+        function_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
+// |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
+// |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+//                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            bindings = <
+    &trans &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2              &trans &trans &trans &trans &trans &trans
+    &trans &trans &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans                    &trans &trans &trans &trans &trans &trans
+    &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
+                         &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
     };
+};
 
-    qwerty {
-      // ---------------------------------------------------------------------------------------------------------------------------------
-      // |  ESC      |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-      // |  TAB      |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-      // | SHIFT     |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-      //                   | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
-      bindings = <
-        &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-        &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-        &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-        &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
-        >;
-      sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
-    };
-
-  };
-  };
