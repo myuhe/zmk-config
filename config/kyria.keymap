@@ -237,7 +237,14 @@ behaviors {
         keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
       };
 
-
+    mmw: morph_w {
+        compatible = "zmk,behavior-mod-morph";
+        label = "morph_w";
+        #binding-cells = <0>;
+        bindings = <&kp W>, <&kp COMMA>;
+        mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
+        keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_LALT|MOD_RALT)>;
+      };
 
       };
 
