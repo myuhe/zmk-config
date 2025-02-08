@@ -121,7 +121,7 @@ behaviors {
  &kp ESC   &kp Q &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp F12                                                             &kp EQUAL &kp N7        &kp N8        &kp N9      &kp LPAR  &kp RPAR
  &kp TAB   &kp A &bt BT_CLR &kp LA(N5) &bt BT_SEL 4 &kp F11                                                           &kp BSPC  &bt BT_SEL 4  &kp N5        &bt BT_CLR  &kp PLUS   &kp MINUS
  &kp LSHFT &kp Z &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &kp F10   &kp LSHFT &kp LSHFT &kp LSHFT &kp LSHFT             &kp DOT   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp FSLH    &kp ASTRK
- &kp LGUI &kp DEL &bt BT_SEL 0 &kp SPACE &kp ESC       &kp SPACE    &kp SPACE  &bt BT_SEL 0   &rgb_ug RGB_HUI &rgb_ug RGB_HUD
+ &kp LGUI &kp DEL &bt BT_SEL 0 &kp SPACE &kp ESC       &kp SPACE    &kp SPACE  &bt BT_SEL 0  &kp BSPC &kp RALT
         >;
 
       sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
