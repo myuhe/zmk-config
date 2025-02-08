@@ -280,8 +280,9 @@ behaviors {
             bindings = <
         &kp TAB        &mmsqt  &mmcom &mmdot &mmp &mmy 							                        &mmf            &mmg          &mmc    &mmr &mml &kp FSLH
 		&mt LCTRL ESC  &kp A	&mmo  &mme	  &mmu	&mmi									                           &mmd            &mmh          &mmt    &mmn &mms &kp MINUS
-         &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &mo 1    &kp LSHFT  &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                     &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+		&kp GRAVE	   &lt NUM SEMI &mmq   &mmj	  &mmk	&mmx   &mt LALT LEFT  &lt FUNC RIGHT   &lt FUNC DOWN  &mt RALT UP  &mmb            &kp M          &mmw    &mm_v &mmz &kp BSLH
+                    &kp RET  &mt LALT PG_UP &lt LOWER DEL  &mt LSHFT SPACE &kp LGUI        &kp RGUI       &mt RSHIFT RET &lt RAISE BSPC  &mt LALT PG_DN &kp RET
+
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
